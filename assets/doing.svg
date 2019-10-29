@@ -1,1 +1,10 @@
-<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" class="svg-inline--fa fa-clock fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="41" viewBox="0 0 40 41">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Icon" width="40" height="41" transform="translate(452 295)" fill="blue"/>
+    </clipPath>
+  </defs>
+  <g id="doing" transform="translate(-452 -295)" clip-path="url(#clip-path)">
+    <path id="doing-2" data-name="doing" d="M20.645.645a20,20,0,1,0,20,20A20,20,0,0,0,20.645.645Zm4.6,28.234L18.137,23.71a.974.974,0,0,1-.4-.782V9.355a.971.971,0,0,1,.968-.968h3.871a.971.971,0,0,1,.968.968v11.1l5.121,3.726a.967.967,0,0,1,.21,1.355L26.6,28.669a.974.974,0,0,1-1.355.21Z" transform="translate(451.355 294.855)" fill="blue"/>
+  </g>
+</svg>

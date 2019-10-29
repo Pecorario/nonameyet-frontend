@@ -1,1 +1,10 @@
-<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="20" height="20" transform="translate(481 378)" fill="rgba(20,20,20,0.8)"/>
+    </clipPath>
+  </defs>
+  <g id="next" transform="translate(-481 -378)" clip-path="url(#clip-path)">
+    <path id="next-2" data-name="next" d="M14.014,17.057l-8.5,8.5a1.493,1.493,0,0,1-2.118,0L1.987,24.142a1.493,1.493,0,0,1,0-2.118L8.01,16,1.987,9.978a1.493,1.493,0,0,1,0-2.118L3.393,6.435a1.493,1.493,0,0,1,2.118,0l8.5,8.5A1.5,1.5,0,0,1,14.014,17.057Z" transform="translate(483 372.005)"/>
+  </g>
+</svg>
