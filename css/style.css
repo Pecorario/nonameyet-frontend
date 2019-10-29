@@ -1,0 +1,89 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+body{
+    background: url("/assets/Fundo.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
+
+h1{
+    font-size: 48px;
+    text-align: center;
+    color: white;
+}
+
+h2{
+    font-size: 36px;
+    color: blue;
+    text-align: center;
+}
+
+.imagem{
+    width: 1em;
+}
+
+.add-item{
+    display: flex;
+    width: 560px;
+    height: 85px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#input{
+    width: 500px;
+    height: 40px;
+    border: 2px solid rgb(25, 90, 205); 
+}
+
+.add{
+    width: 50px;
+    height: 50px;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+
+.logo{
+    font-size: 25px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.flexbox{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.blocos{
+    flex: 1;
+    height: 20em;
+    margin: 20px 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(20, 20, 20, 0.8);
+    background: white;
+}
+
+footer{
+    display: flex;
+    width: 290px;
+    height: 40px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.rodape{
+    text-align: center
+}
+
+.git{
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+
+}

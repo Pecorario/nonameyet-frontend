@@ -11,48 +11,56 @@
         <title>TODO APP</title>
     </head>
 
-    <header>
-        <div class="logo">
-            <a href="https://www.unect.com.br/" target="_blank">
-                <img src="assets/logo.svg" alt="Unect"/>        
-            </a>
-        </div>
-
-        <h1>TODO APP</h1>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="https://www.unect.com.br/" target="_blank">
+                    <img src="assets/logo.svg" alt="Unect"/>        
+                </a>
+            </div>
+    
+            <div class="titulo">
+                <h1>TODO APP</h1>
+            </div>
+        </header>
 
         <div class="add-item">
-            <div>
+            <div class="items">
                 <input id="input" type="text" placeholder="Adicione uma nova tarefa">
             </div>
 
-            <div>
-                <button id="add"><img src="assets/add.svg" alt="Adicionar"></button>
+            <div class="items">
+                <img src="assets/add.svg" alt="Adicionar" class="add">
             </div>
         </div>
-    </header>
 
-    <body>
         <div class="flexbox">
             <div class="blocos">
-                <h2>TO DO</h2>
+                <h2>
+                    TO DO <img src="assets/todo.svg" alt="Lista de Tarefas" class="imagem">
+                </h2>
             </div>
 
             <div class="blocos">
-                <h2>DOING</h2>
+                <h2>
+                    DOING <img src="assets/doing.svg" alt="Relógio" class="imagem">
+                </h2>
             </div>
-            
+
             <div class="blocos">
-                <h2>DONE</h2>
+                <h2>
+                    DONE <img src="assets/done.svg" alt="Concluído" class="imagem">
+                </h2>
             </div>
         </div>
 
         <footer>
-            <div>
+            <div class="rodape">
                 <p>Made by Taynara Pecorario</p>
             </div>
 
             <div>
-                <img src="assets/git.svg" alt="Perfil do GitHub">
+                <img src="assets/git.svg" alt="Perfil do GitHub" class="git">
             </div>
         </footer>
     </body>
