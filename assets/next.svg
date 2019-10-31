@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
-  <defs>
-    <clipPath id="clip-path">
-      <rect id="Rectangle_1" data-name="Rectangle 1" width="20" height="20" transform="translate(481 378)" fill="rgba(20,20,20,0.8)"/>
-    </clipPath>
-  </defs>
-  <g id="next" transform="translate(-481 -378)" clip-path="url(#clip-path)">
-    <path id="next-2" data-name="next" d="M14.014,17.057l-8.5,8.5a1.493,1.493,0,0,1-2.118,0L1.987,24.142a1.493,1.493,0,0,1,0-2.118L8.01,16,1.987,9.978a1.493,1.493,0,0,1,0-2.118L3.393,6.435a1.493,1.493,0,0,1,2.118,0l8.5,8.5A1.5,1.5,0,0,1,14.014,17.057Z" transform="translate(483 372.005)"/>
-  </g>
-</svg>
+<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-circle-right" class="svg-inline--fa fa-chevron-circle-right fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path></svg>

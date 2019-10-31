@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
-  <defs>
-    <clipPath id="clip-path">
-      <rect id="Rectangle_2" data-name="Rectangle 2" width="17" height="17" transform="translate(459 378)" fill="#fff" stroke="#707070" stroke-width="1"/>
-    </clipPath>
-  </defs>
-  <g id="close" transform="translate(-459 -378)" clip-path="url(#clip-path)">
-    <path id="close2" d="M11.927,13.194l4.917-4.917a1.546,1.546,0,0,0,0-2.186L15.752,5a1.546,1.546,0,0,0-2.186,0L8.649,9.915,3.731,5A1.546,1.546,0,0,0,1.545,5L.453,6.091a1.546,1.546,0,0,0,0,2.186L5.37,13.194.453,18.112a1.546,1.546,0,0,0,0,2.186L1.545,21.39a1.546,1.546,0,0,0,2.186,0l4.917-4.917,4.917,4.917a1.546,1.546,0,0,0,2.186,0L16.845,20.3a1.546,1.546,0,0,0,0-2.186Z" transform="translate(459 373.455)"/>
-  </g>
-</svg>
+<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times-circle" class="svg-inline--fa fa-times-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"></path></svg>

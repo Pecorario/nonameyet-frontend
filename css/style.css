@@ -43,21 +43,21 @@ header{
 
 .add-item{
     display: flex;
-    width: 560px;
-    height: 85px;
+    width: 400px;
+    height: 75px;
     margin: 0 auto;
     align-items: center;
 }
 
 #input{
-    width: 500px;
-    height: 40px;
-    border: 2px solid rgb(25, 90, 205); 
+    width: 350px;
+    height: 30px;
+    border: 2px solid rgb(25, 90, 205);
 }
 
 .add{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-top: 4px;
     margin-left: 5px;
 }
@@ -70,15 +70,17 @@ header{
 
 .flexbox{
     width: 960px;
+    min-height: 18em;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .blocos{
     flex: 1;
-    height: 15em;
+    width: 300px;
     margin: 20px 10px;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 3px 6px rgba(20, 20, 20, 0.8);
     background: white;
@@ -99,12 +101,40 @@ header{
     margin: 0 auto;
 }
 
-.blocos li{
+/* Conteudo */
+
+.coluna li{
+    margin: 0 0 10px 0;
     background: rgba(25, 90, 205, 0.3);
     border-radius: 10px;
     padding: 5px 10px;
-    margin: 0px 0px 10px 0px;
+    position: relative;
 }
+
+.coluna p{
+    margin-left: 25px;
+    width: 200px;
+    word-wrap: break-word;
+}
+.close{
+    width: 1em;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.next{
+    width: 1em;
+    float: right;
+    position: absolute;
+    top: 50%;
+    transform: translate(230px,-50%);
+}
+
+.next:hover, .close:hover{
+    cursor: pointer;
+}
+
 
 /* RODAPÉ */
 
