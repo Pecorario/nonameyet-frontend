@@ -1,0 +1,15 @@
+body {
+	background: #1F1F1F;
+}
+.App {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.App h1 {
+	color: #fff;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 5rem;
+}
