@@ -1,15 +1,155 @@
-body {
-	background: #1F1F1F;
-}
-.App {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
+/* GERAL */
+
+body{
+    background: url("assets/Fundo.jpg") no-repeat fixed center;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+    text-align: left;
+    color: black;
 }
 
-.App h1 {
-	color: #fff;
-	font-family: 'Roboto Mono', monospace;
-	font-size: 5rem;
+h1{
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+h2{
+    font-size: 36px;
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* HEADER */
+
+.header{
+    width: 100%;
+    padding: 15px 0;
+}
+
+.logo{
+    font-size: 25px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* ADICIONAR TAREFAS */
+
+.add-item{
+    display: flex;
+    width: 400px;
+    height: 75px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.input{
+	background: white;
+	color: grey;
+    width: 350px;
+    height: 30px;
+    border: 2px solid rgb(25, 90, 205);
+}
+
+.add{
+    width: 40px;
+    height: 40px;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+
+.add:hover{
+    cursor: pointer;
+}
+
+/* BLOCOS */
+
+.flexbox{
+    width: 960px;
+    min-height: 18em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blocos{
+    flex: 1;
+    width: 300px;
+    margin: 20px 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(20, 20, 20, 0.8);
+    background: white;
+}
+
+.titulo{
+    display: flex;
+    width: 160px;
+    margin: 0 auto;  
+}
+
+.titulo-texto{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.titulo-img{
+    margin: 0 auto;
+}
+
+/* Conteudo */
+
+.coluna li{
+    margin: 0 0 10px 0;
+    background: rgba(25, 90, 205, 0.3);
+    border-radius: 10px;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.coluna p{
+    margin-left: 25px;
+    width: 200px;
+    word-wrap: break-word;
+}
+.close{
+    width: 1em;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.next{
+    width: 1em;
+    float: right;
+    position: absolute;
+    top: 50%;
+    transform: translate(230px,-50%);
+}
+
+.next:hover, .close:hover{
+    cursor: pointer;
+}
+
+
+/* RODAPÉ */
+
+.footer{
+    display: flex;
+    width: 290px;
+    height: 40px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.rodape{
+    text-align: center;
+}
+
+.git{
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
 }
