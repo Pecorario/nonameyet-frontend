@@ -24,12 +24,12 @@ const save = (task) => {
 
 const change = (id) => {
     let task_list = getList()
-    const updateList = task_list.map(task => {
+    const updateLista = task_list.map(task => {
         if (task.id === id) 
             task.status = task.status + 1
         return task
     })
-    saveList(updateList)
+    saveList(updateLista)
 }
 
 const load = () => {
@@ -39,10 +39,10 @@ const load = () => {
 const remove = (id) => {
     let task_list = getList()
     if (task_list) {
-        let newList = task_list.filter(task => {
+        let novaLista = task_list.filter(task => {
             return task.id !== id
         })
-        saveList(newList)
+        saveList(novaLista)
     }
 
 }

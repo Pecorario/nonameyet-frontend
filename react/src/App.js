@@ -14,36 +14,40 @@ class App extends Component {
 	}
 
 	salvaTarefas = (task) => {
-		const {list} = this.state
-		const novaTarefa = {
-			id: id(),
-			name: task,
-			status: 0
+		if(task){
+			const novaTarefa = {
+				id: id(),
+				name: task,
+				status: 0
+			}
+			LocalStorage.save(novaTarefa)
+			this._loadData()
+		} else {
+			alert('Você precisa escrever alguma coisa, meu anjo')
 		}
-		LocalStorage.save(novaTarefa)
-		this.setState({list: [ ...list, novaTarefa]})
 	}
 
 	mudaStatus = (id) => {
-		const { list } = this.state
-		const updateLista = list.map(task => {
-			if(task.id === id)
-				task.status = task.status + 1
-			return task
-		})
-		this.setState({list: updateLista})
+		LocalStorage.change(id)
+		this._loadData()
 	}
 
 	deletaLinha = (id) => {
-		const { list } = this.state
-		const updateLista = list.filter(task => {
-			return task.id !== id
-		})
-		this.setState({list: updateLista})
+		LocalStorage.remove(id)
+		this._loadData()
 	}
 
-	componentWillMount(){
+	limpaPagina = () => {
+		LocalStorage.clear()
+		this._loadData()
+	}
+
+	_loadData () {
 		this.setState({list: LocalStorage.load()})
+	}
+
+	componentWillMount () {
+		this._loadData()
 	}
 
 	render () {
@@ -81,7 +85,7 @@ class App extends Component {
 
 		return(
 			<div className="App">
-				<AppHeader retornaTarefa={this.salvaTarefas}/>
+				<AppHeader clear={this.limpaPagina} retornaTarefa={this.salvaTarefas} />
 
 				<div className="flexbox center">
 

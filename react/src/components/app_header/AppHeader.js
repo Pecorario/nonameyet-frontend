@@ -20,7 +20,7 @@ class AppHeader extends Component {
             <div className="add-item center">
                     <input value={tarefaInput} onChange={this.handleInput} className="input " type="text" placeholder="Adicione uma nova tarefa"/>
                     <button onClick={() => {this.handleClick()}}><Icon type="add" /></button>
-                    <button><Icon type="eraser"/></button>
+                    <button onClick={() => {this.props.clear()}}><Icon type="eraser"/></button>
             </div>
         </div> 
         );
