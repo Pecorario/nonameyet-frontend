@@ -4,10 +4,14 @@ import Icon from '../../assets/icons/Icon'
 const CriaLinha = (props) => (
     <li className="linha"> 
         {props.task.name}
-        <Icon type="close" onClick={() => {props.deletaLinha(props.task.id)}}/>
+        <button className="btn" onClick={() => {props.deletaLinha(props.task.id)}}>
+            <Icon type="close" />
+        </button>
         
         {props.task.status !== 2 && (
-            <Icon type="next" onClick = {() => {props.mudaStatus(props.task.id)}}/>
+            <button className="btn" onClick = {() => {props.mudaStatus(props.task.id)}}>
+                <Icon type="next" />
+            </button>
         )}
     </li>
 );

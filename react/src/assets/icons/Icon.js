@@ -13,12 +13,12 @@ const Heart = (props) => {
 
         case 'close' :
             return (
-                <i class="fas fa-times-circle fa-1x"></i>
+                <i class="fas fa-times-circle fa-2x"></i>
             )
 
         case 'next' :
             return (
-                <i class="fas fa-chevron-circle-right fa-1x"></i>
+                <i class="fas fa-chevron-circle-right fa-2x"></i>
             )
 
         case 'todo':
