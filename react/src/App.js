@@ -4,35 +4,40 @@ import Icon from './assets/icons/Icon'
 import CriaLinha from './components/app_tasks/CriaLinha';
 import AppHeader from './components/app_header/AppHeader';
 import AppFooter from './components/app_footer/AppFooter';
+import id from 'uuid'
 
 class App extends Component {
 	
 	state = {
-		list: [{
-			id: 0,
-			name: 'make todo',
+		list: []
+	}
+
+	salvaTarefas = (task) => {
+		const {list} = this.state
+		const novaTarefa = {
+			id: id(),
+			name: task,
 			status: 0
-		},{
-			id: 1,
-			name: 'learn git',
-			status: 0
-		},{
-			id: 3,
-			name: 'learn js',
-			status: 0
-		},{
-			id: 4,
-			name: 'Learn DS in C',
-			status: 1
-		},{
-			id: 5,
-			name: 'Learn React',
-			status: 1
-		},{
-			id: 6,
-			name: 'Homework',
-			status: 2
-		}]
+		}
+		this.setState({list: [ ...list, novaTarefa]})
+	}
+
+	mudaStatus = (id) => {
+		const { list } = this.state
+		const updateLista = list.map(task => {
+			if(task.id === id)
+				task.status = task.status + 1
+			return task
+		})
+		this.setState({list: updateLista})
+	}
+
+	deletaLinha = (id) => {
+		const { list } = this.state
+		const updateLista = list.filter(task => {
+			return task.id !== id
+		})
+		this.setState({list: updateLista})
 	}
 
 	render () {
@@ -40,20 +45,37 @@ class App extends Component {
 		const { list } = this.state
 
 		const todoColuna = list.map(task => {
-			return (task.status === 0) && (<CriaLinha task={task} />)
+			return (task.status === 0) 
+				&& (<CriaLinha 
+					deletaLinha={this.deletaLinha}
+					mudaStatus={this.mudaStatus}
+					key={task.id}
+					task={task}
+				/>)
 		})
 
 		const doingColuna = list.map(task => {
-			return (task.status === 1) && (<CriaLinha task={task} />)
+			return (task.status === 1) 
+				&& (<CriaLinha 
+					deletaLinha={this.deletaLinha}
+					mudaStatus={this.mudaStatus}
+					key={task.id}
+					task={task} 
+				/>)
 		})
 
 		const doneColuna = list.map(task => {
-			return (task.status === 2) && (<CriaLinha task={task} />)
+			return (task.status === 2) 
+			&& (<CriaLinha 
+				deletaLinha={this.deletaLinha}
+				key={task.id}
+				task={task}
+			/>)
 		})
 
 		return(
 			<div className="App">
-				<AppHeader />
+				<AppHeader retornaTarefa={this.salvaTarefas}/>
 
 				<div className="flexbox center">
 
