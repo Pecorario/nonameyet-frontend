@@ -4,12 +4,10 @@ import Icon from '../../assets/icons/Icon'
 const AppFooter = () => {
     return(
     <div className="footer center">
-        <div className="rodape center">
-            <p>Made by Taynara Pecorario </p>
-            <a href="https://github.com/Pecorario" target="_blank">
-                <Icon type="git" />
-            </a>
-        </div>
+        <span>Made by Taynara Pecorario</span>
+        <a href="https://github.com/Pecorario" target="_blank">
+            <Icon type="git" />
+        </a>
     </div>
     );
 }

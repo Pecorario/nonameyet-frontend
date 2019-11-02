@@ -33,14 +33,17 @@ h2{
     margin-left: 7px;
 }
 
+.App{
+    width: 100%;
+    height: 100vh;
+}
+
 /* HEADER */
 
 .app-header{
     width: 100%;
     padding: 3% 0;
 }
-
-/* ADICIONAR TAREFAS */
 
 .add-item{
 	margin-top: 2%;
@@ -83,7 +86,8 @@ h2{
 .blocos h2{
 	margin-bottom: 10px;
 }
-/* CONTEÚDO*/
+
+/* TAREFAS */
 
 li{
     margin: 0 0 15px 0;
@@ -91,7 +95,6 @@ li{
     border-radius: 10px;
     padding: 10px 10px;
     text-align: center;
-    justify-content: center;
 }
 
 ul .fas{
@@ -113,14 +116,19 @@ li:hover{
 }
 
 
-/* RODAPÉ */
+/* FOOTER */
 
 .footer{
-    height: 40px;
+    width: 100%;
+	height: 60px;
+	align-items: flex-end;
+    justify-content: center;
 }
 
-.rodape{
-    text-align: center;
+.footer span{
+    font-size: 18px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 .fab{
@@ -131,5 +139,3 @@ li:hover{
 .fa-github:hover{
 	color: white;
 }
-
-
