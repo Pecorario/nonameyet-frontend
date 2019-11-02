@@ -47,8 +47,9 @@ h2{
 
 .add-item{
 	margin-top: 2%;
-    width: 45%;
-	height: 50px;
+    width: 90%;
+    height: 50px;
+    max-width: 600px;
 }
 
 .input{

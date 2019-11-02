@@ -1,1 +1,0 @@
-Projeto ToDo App refeito usando React
