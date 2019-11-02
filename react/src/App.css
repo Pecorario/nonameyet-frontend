@@ -44,7 +44,7 @@ h2{
 
 .add-item{
 	margin-top: 2%;
-    width: 500px;
+    width: 45%;
 	height: 50px;
 }
 
@@ -57,7 +57,7 @@ h2{
 	font-size: 22px;
 }
 
-.fa-plus-square:hover{
+.fa-plus-square:hover, .fa-eraser:hover{
     color: blue;
     cursor: pointer;   
 }
@@ -131,3 +131,6 @@ li:hover{
 	color: white;
 }
 
+.App{
+    position: relative;
+}

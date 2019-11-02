@@ -41,6 +41,11 @@ const Heart = (props) => {
                 <i class="fab fa-github fa-2x"></i>
             )
 
+        case 'eraser':
+            return(
+                <i class="fas fa-eraser fa-4x"></i>
+            )
+
         default:
             throw new Error("This type does not contains in css type list");
             

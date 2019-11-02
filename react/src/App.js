@@ -4,7 +4,8 @@ import Icon from './assets/icons/Icon'
 import CriaLinha from './components/app_tasks/CriaLinha';
 import AppHeader from './components/app_header/AppHeader';
 import AppFooter from './components/app_footer/AppFooter';
-import id from 'uuid'
+import id from 'uuid';
+import LocalStorage from './services/LocalStorage';
 
 class App extends Component {
 	
@@ -19,6 +20,7 @@ class App extends Component {
 			name: task,
 			status: 0
 		}
+		LocalStorage.save(novaTarefa)
 		this.setState({list: [ ...list, novaTarefa]})
 	}
 
@@ -38,6 +40,10 @@ class App extends Component {
 			return task.id !== id
 		})
 		this.setState({list: updateLista})
+	}
+
+	componentWillMount(){
+		this.setState({list: LocalStorage.load()})
 	}
 
 	render () {
