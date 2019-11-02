@@ -35,7 +35,7 @@ h2{
 
 /* HEADER */
 
-.header{
+.app-header{
     width: 100%;
     padding: 3% 0;
 }
@@ -46,7 +46,6 @@ h2{
 	margin-top: 2%;
     width: 500px;
 	height: 50px;
-    
 }
 
 .input{
