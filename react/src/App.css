@@ -5,7 +5,8 @@ body{
 	background-size: cover;
 	font-family: 'Roboto', sans-serif;
     text-align: left;
-    color: black;
+	color: black;
+	font-size: 20px;
 }
 
 h1{
@@ -19,137 +20,115 @@ h2{
     font-size: 36px;
     color: blue;
     font-weight: bold;
-    text-align: center;
+	text-align: center;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.fas{
+    margin-left: 7px;
 }
 
 /* HEADER */
 
 .header{
     width: 100%;
-    padding: 15px 0;
-}
-
-.logo{
-    font-size: 25px;
-    display: inline-block;
-    margin: 0 10px;
+    padding: 3% 0;
 }
 
 /* ADICIONAR TAREFAS */
 
 .add-item{
-    display: flex;
-    width: 400px;
-    height: 75px;
-    margin: 0 auto;
-    align-items: center;
+	margin-top: 2%;
+    width: 500px;
+	height: 50px;
+    
 }
 
 .input{
 	background: white;
-	color: grey;
-    width: 350px;
+    width: 100%;
     height: 30px;
-    border: 2px solid rgb(25, 90, 205);
+	border: 2px solid rgb(25, 90, 205);
+	padding: 5px 10px;
+	font-size: 22px;
 }
 
-.add{
-    width: 40px;
-    height: 40px;
-    margin-top: 4px;
-    margin-left: 5px;
-}
-
-.add:hover{
-    cursor: pointer;
+.fa-plus-square:hover{
+    color: blue;
+    cursor: pointer;   
 }
 
 /* BLOCOS */
 
 .flexbox{
-    width: 960px;
-    min-height: 18em;
-    margin: 0 auto;
-    display: flex;
+    max-width: 1200px;
     flex-wrap: wrap;
 }
 
 .blocos{
     flex: 1;
-    width: 300px;
-    margin: 20px 10px;
+	width: 300px;
+	min-height: 18em;
+    margin: 20px 20px;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 3px 6px rgba(20, 20, 20, 0.8);
     background: white;
 }
 
-.titulo{
-    display: flex;
-    width: 160px;
-    margin: 0 auto;  
+.blocos h2{
+	margin-bottom: 10px;
 }
-
-.titulo-texto{
-    text-align: center;
-    margin: 0 auto;
-}
-
-.titulo-img{
-    margin: 0 auto;
-}
-
-/* Conteudo */
+/* CONTEÚDO*/
 
 .coluna li{
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
     background: rgba(25, 90, 205, 0.3);
     border-radius: 10px;
-    padding: 5px 10px;
-    position: relative;
+    padding: 10px 10px;
+	position: relative;
+	text-align: center;
 }
 
-.coluna p{
-    margin-left: 25px;
-    width: 200px;
-    word-wrap: break-word;
-}
-.close{
-    width: 1em;
-    position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
+ul .fas{
+	margin-left: 3px;
 }
 
-.next{
-    width: 1em;
-    float: right;
-    position: absolute;
-    top: 50%;
-    transform: translate(230px,-50%);
+li:hover{
+    background: blue;
 }
 
-.next:hover, .close:hover{
-    cursor: pointer;
+.fa-chevron-circle-right:hover{
+    color: white;
+    cursor: pointer;   
 }
 
+.fa-times-circle:hover{
+    color: white;
+    cursor: pointer;   
+}
 
 /* RODAPÉ */
 
 .footer{
-    display: flex;
-    width: 290px;
     height: 40px;
-    margin: 0 auto;
-    align-items: center;
 }
 
 .rodape{
     text-align: center;
 }
 
-.git{
-    width: 40px;
-    height: 40px;
-    margin-left: 5px;
+.fab{
+	color: black;
+	margin-left: 5px;
 }
+
+.fa-github:hover{
+	color: white;
+}
+
